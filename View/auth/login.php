@@ -36,11 +36,12 @@
             <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
                 <h2 class="text-2xl font-bold text-gray-900 mb-6">Connexion Admin</h2>
                 
-                <form class="space-y-5">
+                <form method="post" class="space-y-5">
                     <!-- Email Field -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
                         <input 
+                            name="email_auth"
                             type="email" 
                             placeholder="admin@istichara.ma"
                             class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all"
@@ -51,23 +52,18 @@
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">Mot de passe</label>
                         <input 
+                            name="password_auth"
                             type="password" 
                             placeholder="••••••••"
                             class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent transition-all"
                         >
                     </div>
 
-                    <!-- Remember Me -->
-                    <div class="flex items-center justify-between">
-                        <label class="flex items-center">
-                            <input type="checkbox" class="w-4 h-4 text-blue-900 border-gray-300 rounded focus:ring-blue-900">
-                            <span class="ml-2 text-sm text-gray-700">Se souvenir de moi</span>
-                        </label>
-                        <a href="#" class="text-sm text-blue-900 hover:text-blue-700 font-medium transition-colors">Mot de passe oublié?</a>
-                    </div>
+                    
 
                     <!-- Submit Button -->
                     <button 
+                        name="btn_auth"
                         type="submit"
                         class="w-full bg-blue-900 text-white py-3 rounded-lg font-medium hover:bg-blue-800 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                     >
