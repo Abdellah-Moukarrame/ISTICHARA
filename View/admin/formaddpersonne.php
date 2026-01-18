@@ -21,7 +21,7 @@
         </div>
 
         <!-- Form -->
-        <form class="form space-y-6">
+        <form method="post" class="form space-y-6">
 
             <!-- Nom & Email -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
