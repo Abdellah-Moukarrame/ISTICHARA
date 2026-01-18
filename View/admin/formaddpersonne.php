@@ -28,6 +28,7 @@
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-2">Nom complet</label>
                     <input type="text" placeholder="Me. Ahmed Bennani"
+                        name="nom_personne"
                         class="w-full px-4 py-3 rounded-lg border border-gray-300
                                focus:ring-2 focus:ring-blue-900 focus:outline-none">
                 </div>
@@ -35,6 +36,7 @@
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
                     <input type="email" placeholder="email@exemple.com"
+                        name="email_personne"
                         class="w-full px-4 py-3 rounded-lg border border-gray-300
                                focus:ring-2 focus:ring-blue-900 focus:outline-none">
                 </div>
@@ -45,6 +47,7 @@
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-2">Type</label>
                     <select
+                        name="personne"
                         class="personne w-full px-4 py-3 rounded-lg border border-gray-300
                                focus:ring-2 focus:ring-blue-900 focus:outline-none">
                         <option>Choisir</option>
@@ -56,6 +59,7 @@
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-2">Ville</label>
                     <input type="text" placeholder="Casablanca"
+                        name="ville_personne"
                         class="w-full px-4 py-3 rounded-lg border border-gray-300
                                focus:ring-2 focus:ring-blue-900 focus:outline-none">
                 </div>
@@ -66,6 +70,7 @@
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-2">Téléphone</label>
                     <input type="text" placeholder="+212 6 XX XX XX XX"
+                        name="tele_personne"
                         class="w-full px-4 py-3 rounded-lg border border-gray-300
                                focus:ring-2 focus:ring-blue-900 focus:outline-none">
                 </div>
@@ -73,6 +78,7 @@
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-2">Expérience (années)</label>
                     <input type="number" placeholder="10"
+                        name="exp_personne"
                         class="w-full px-4 py-3 rounded-lg border border-gray-300
                                focus:ring-2 focus:ring-blue-900 focus:outline-none">
                 </div>
@@ -82,6 +88,7 @@
             <div>
                 <label class="block text-sm font-medium text-gray-700 mb-2">Tarif / heure (DH)</label>
                 <input type="number" placeholder="500"
+                    name="tarif_personne"
                     class="w-full px-4 py-3 rounded-lg border border-gray-300
                            focus:ring-2 focus:ring-blue-900 focus:outline-none">
             </div>
@@ -101,7 +108,7 @@
                     Annuler
                 </a>
 
-                <button type="submit"
+                <button type="submit" name="add_personne"
                     class="px-8 py-3 bg-green-600 text-white rounded-lg
                                hover:bg-green-700 transition shadow-md">
                     Enregistrer
@@ -132,6 +139,7 @@
                                 Spécialités
                             </label>
                             <select
+                                name="specialite"
                                 class="w-full px-4 py-3 rounded-lg border border-gray-300
                                     focus:ring-2 focus:ring-blue-900 focus:outline-none">
                                 <option value="">Choisir une spécialité</option>
@@ -149,11 +157,12 @@
                                 Consultation en ligne
                             </label>
                             <select
+                                name="consultaion"
                                 class="w-full px-4 py-3 rounded-lg border border-gray-300
                                     focus:ring-2 focus:ring-blue-900 focus:outline-none">
                                 <option value="">Choisir</option>
-                                <option value="1">Oui</option>
-                                <option value="0">Non</option>
+                                <option value="yes">Oui</option>
+                                <option value="no">Non</option>
                             </select>
                         </div>
             `

@@ -1,4 +1,6 @@
 <?php
+namespace Model;
+use PDO;
 class Stats extends  Personne{
     private PDO $db;
     public function __construct()
@@ -30,6 +32,5 @@ class Stats extends  Personne{
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
-
     
 }

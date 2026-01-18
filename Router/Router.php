@@ -2,15 +2,15 @@
 class Router
 {
     public static $routes = [];
-    public function get($path, $controller)
+    public static function get($path, $controller)
     {
         return self::$routes[$path] = $controller;
     }
-    public function dispatcher()
+    public static function dispatcher()
     {
-        $page = $_GET['page'];
-        if (!isset(self::$routes[$page])) {
-            require_once "../Views/error/404.php";
+        $page = $_GET['page']??'';
+        if (!array_key_exists($page,self::$routes)) {
+            require_once "./View/error/404.php";
         }
         $controller = self::$routes[$page];
         require($controller);

@@ -1,5 +1,11 @@
 <?php
-abstract class Personne
+
+namespace Model;
+
+use PDO;
+use Service\Database;
+
+class Personne
 {
     private string $full_name, $phone, $email, $specialites, $Consultation_enligne, $Type_acte;
     private int $id, $experience, $tarif;
@@ -10,36 +16,83 @@ abstract class Personne
     }
 
 
-    // public function getId(){
-    //     return $this->id;
-    // }
-    // public function getexperience(){
-    //     return $this->experience;
-    // }
-    // public function gettarif(){
-    //     return $this->tarif;
-    // }
+    public function getId()
+    {
+        return $this->id;
+    }
+    public function getexperience()
+    {
+        return $this->experience;
+    }
+    public function gettarif()
+    {
+        return $this->tarif;
+    }
 
-    // public function getfull_name()
-    // {
-    //     return $this->full_name;
-    // }
-    // public function getphone()
-    // {
-    //     return $this->phone;
-    // }
-    // public function getemail(){
-    //     return $this->email;
-    // }
-    // public function getspecialites(){
-    //     return $this->specialites;
-    // }
-    // public function getConsultation_enligne(){
-    //     return $this->Consultation_enligne;
-    // }
-    // public function getType_acte(){
-    //     return $this->Type_acte;
-    // }
+    public function getfull_name()
+    {
+        return $this->full_name;
+    }
+    public function getphone()
+    {
+        return $this->phone;
+    }
+    public function getemail()
+    {
+        return $this->email;
+    }
+    public function getspecialites()
+    {
+        return $this->specialites;
+    }
+    public function getConsultation_enligne()
+    {
+        return $this->Consultation_enligne;
+    }
+    public function getType_acte()
+    {
+        return $this->Type_acte;
+    }
+    public function setexperience($experience)
+    {
+        $this->experience = $experience;
+    }
+
+    public function settarif($tarif)
+    {
+        $this->tarif = $tarif;
+    }
+
+    public function setfull_name($full_name)
+    {
+        $this->full_name = $full_name;
+    }
+
+    public function setphone($phone)
+    {
+        $this->phone = $phone;
+    }
+
+    public function setemail($email)
+    {
+        $this->email = $email;
+    }
+
+    public function setspecialites($specialites)
+    {
+        $this->specialites = $specialites;
+    }
+
+    public function setConsultation_enligne($Consultation_enligne)
+    {
+        $this->Consultation_enligne = $Consultation_enligne;
+    }
+
+    public function setType_acte($Type_acte)
+    {
+        $this->Type_acte = $Type_acte;
+    }
+
 
     public function create()
     {
