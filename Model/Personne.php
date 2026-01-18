@@ -7,8 +7,8 @@ use Service\Database;
 
 class Personne
 {
-    private string $full_name, $phone, $email, $specialites, $Consultation_enligne, $Type_acte;
-    private int $id, $experience, $tarif;
+    private ?string $full_name, $phone, $email, $specialites = null, $Consultation_enligne = null, $Type_acte = null, $nom_ville;
+    private int $id, $experience, $tarif, $id_ville;
     private PDO $db;
     public function __construct()
     {
@@ -92,12 +92,26 @@ class Personne
     {
         $this->Type_acte = $Type_acte;
     }
-
-
-    public function create()
+    public function setnom_ville($nom_ville)
     {
-        $stmt = $this->db->prepare("insert into personne (full_name,phone,email,experience,tarif,Specialites,Consultation_enligne,Type_acte) 
-        values(:fullname,:phone,:email,:experience,:tarif,:specialites,:con_enligne,:Type_acte");
+        $this->nom_ville = $nom_ville;
+    }
+    public function setid_ville($id_ville)
+    {
+        $this->id_ville = $id_ville;
+    }
+
+
+    public function create_ville()
+    {
+        $stmt = $this->db->prepare("insert into Ville(nom_ville) values (:nom_ville) ");
+        $stmt->execute([':nom_ville' => $this->nom_ville]);
+        return $this->db->lastInsertId();
+    }
+    public function create_personne()
+    {
+        $stmt = $this->db->prepare("insert into personne (full_name,phone,email,experience,tarif,Specialites,Consultation_enligne,Type_acte,ville_id) 
+        values(:fullname,:phone,:email,:experience,:tarif,:specialites,:con_enligne,:Type_acte,:id_ville)");
         $stmt->execute(
             [
                 ":fullname" => $this->full_name,
@@ -107,7 +121,8 @@ class Personne
                 ":tarif" => $this->tarif,
                 ":specialites" => $this->specialites,
                 ":con_enligne" => $this->Consultation_enligne,
-                ":Type_acte" => $this->Type_acte
+                ":Type_acte" => $this->Type_acte,
+                ":id_ville" => $this->id_ville
             ]
         );
     }
@@ -123,7 +138,7 @@ class Personne
     }
     public function getAll()
     {
-        $stmt = $this->db->prepare("select * from personne");
+        $stmt = $this->db->prepare("select personne.* ,ville.nom_ville from personne join ville on ville.id = personne.ville_id");
         $stmt->execute();
         return  $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
