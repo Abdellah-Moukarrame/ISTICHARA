@@ -38,7 +38,7 @@
                     <a href="#" class="text-sm font-medium text-blue-900 hover:text-blue-700 transition-colors">Avocats</a>
                     <a href="#" class="text-sm font-medium text-gray-700 hover:text-blue-900 transition-colors">Huissiers</a>
                     <a href="#" class="text-sm font-medium text-gray-700 hover:text-blue-900 transition-colors">À propos</a>
-                    <a href="login.html" class="px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors shadow-md hover:shadow-lg text-sm font-medium">
+                    <a href="login" class="px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition-colors shadow-md hover:shadow-lg text-sm font-medium">
                         Connexion Admin
                     </a>
                 </nav>
