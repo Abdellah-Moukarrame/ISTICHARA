@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,7 @@
         }
     </script>
 </head>
+
 <body class="bg-gray-50">
     <div class="flex h-screen overflow-hidden">
         <!-- Sidebar (same as dashboard) -->
@@ -74,12 +76,16 @@
                         <h1 class="text-2xl font-bold text-gray-900">Gestion des Professionnels</h1>
                         <p class="text-sm text-gray-600 mt-1">Gérer les avocats et huissiers</p>
                     </div>
-                    <button class="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-all shadow-md hover:shadow-lg flex items-center space-x-2">
+                    <a href="formaddpersonne.php"
+                        class="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 
+                        transition-all shadow-md hover:shadow-lg flex items-center space-x-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
                         </svg>
                         <span>Ajouter un Professionnel</span>
-                    </button>
+                    </a>
+
                 </div>
             </header>
 
@@ -305,4 +311,5 @@
         </div>
     </div>
 </body>
+
 </html>

@@ -96,7 +96,6 @@
                                     <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Avocats</th>
                                     <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Huissiers</th>
                                     <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Total</th>
-                                    <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Pourcentage</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-gray-200">
@@ -105,70 +104,30 @@
                                     <td class="px-6 py-4 text-sm text-gray-900">85</td>
                                     <td class="px-6 py-4 text-sm text-gray-900">28</td>
                                     <td class="px-6 py-4 text-sm font-medium text-gray-900">113</td>
-                                    <td class="px-6 py-4">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="flex-1 bg-gray-200 rounded-full h-2 max-w-[200px]">
-                                                <div class="bg-blue-900 h-2 rounded-full" style="width: 34%"></div>
-                                            </div>
-                                            <span class="text-sm font-medium text-gray-900">34%</span>
-                                        </div>
-                                    </td>
                                 </tr>
                                 <tr class="hover:bg-gray-50 transition-colors">
                                     <td class="px-6 py-4 text-sm font-medium text-gray-900">Rabat</td>
                                     <td class="px-6 py-4 text-sm text-gray-900">72</td>
                                     <td class="px-6 py-4 text-sm text-gray-900">24</td>
                                     <td class="px-6 py-4 text-sm font-medium text-gray-900">96</td>
-                                    <td class="px-6 py-4">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="flex-1 bg-gray-200 rounded-full h-2 max-w-[200px]">
-                                                <div class="bg-blue-900 h-2 rounded-full" style="width: 29%"></div>
-                                            </div>
-                                            <span class="text-sm font-medium text-gray-900">29%</span>
-                                        </div>
-                                    </td>
                                 </tr>
                                 <tr class="hover:bg-gray-50 transition-colors">
                                     <td class="px-6 py-4 text-sm font-medium text-gray-900">Marrakech</td>
                                     <td class="px-6 py-4 text-sm text-gray-900">45</td>
                                     <td class="px-6 py-4 text-sm text-gray-900">18</td>
                                     <td class="px-6 py-4 text-sm font-medium text-gray-900">63</td>
-                                    <td class="px-6 py-4">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="flex-1 bg-gray-200 rounded-full h-2 max-w-[200px]">
-                                                <div class="bg-blue-900 h-2 rounded-full" style="width: 19%"></div>
-                                            </div>
-                                            <span class="text-sm font-medium text-gray-900">19%</span>
-                                        </div>
-                                    </td>
                                 </tr>
                                 <tr class="hover:bg-gray-50 transition-colors">
                                     <td class="px-6 py-4 text-sm font-medium text-gray-900">Tanger</td>
                                     <td class="px-6 py-4 text-sm text-gray-900">28</td>
                                     <td class="px-6 py-4 text-sm text-gray-900">11</td>
                                     <td class="px-6 py-4 text-sm font-medium text-gray-900">39</td>
-                                    <td class="px-6 py-4">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="flex-1 bg-gray-200 rounded-full h-2 max-w-[200px]">
-                                                <div class="bg-blue-900 h-2 rounded-full" style="width: 12%"></div>
-                                            </div>
-                                            <span class="text-sm font-medium text-gray-900">12%</span>
-                                        </div>
-                                    </td>
                                 </tr>
                                 <tr class="hover:bg-gray-50 transition-colors">
                                     <td class="px-6 py-4 text-sm font-medium text-gray-900">Fès</td>
                                     <td class="px-6 py-4 text-sm text-gray-900">15</td>
                                     <td class="px-6 py-4 text-sm text-gray-900">8</td>
                                     <td class="px-6 py-4 text-sm font-medium text-gray-900">23</td>
-                                    <td class="px-6 py-4">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="flex-1 bg-gray-200 rounded-full h-2 max-w-[200px]">
-                                                <div class="bg-blue-900 h-2 rounded-full" style="width: 6%"></div>
-                                            </div>
-                                            <span class="text-sm font-medium text-gray-900">6%</span>
-                                        </div>
-                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -186,8 +145,6 @@
                                     <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Avocat</th>
                                     <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Ville</th>
                                     <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Expérience</th>
-                                    <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Vues</th>
-                                    <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Contacts</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-gray-200">
@@ -205,8 +162,6 @@
                                     </td>
                                     <td class="px-6 py-4 text-sm text-gray-900">Casablanca</td>
                                     <td class="px-6 py-4 text-sm text-gray-900">15 ans</td>
-                                    <td class="px-6 py-4 text-sm font-medium text-gray-900">2,341</td>
-                                    <td class="px-6 py-4 text-sm font-medium text-gray-900">156</td>
                                 </tr>
                                 <tr class="hover:bg-gray-50 transition-colors">
                                     <td class="px-6 py-4">
@@ -222,8 +177,6 @@
                                     </td>
                                     <td class="px-6 py-4 text-sm text-gray-900">Rabat</td>
                                     <td class="px-6 py-4 text-sm text-gray-900">12 ans</td>
-                                    <td class="px-6 py-4 text-sm font-medium text-gray-900">1,987</td>
-                                    <td class="px-6 py-4 text-sm font-medium text-gray-900">134</td>
                                 </tr>
                                 <tr class="hover:bg-gray-50 transition-colors">
                                     <td class="px-6 py-4">
@@ -239,72 +192,13 @@
                                     </td>
                                     <td class="px-6 py-4 text-sm text-gray-900">Marrakech</td>
                                     <td class="px-6 py-4 text-sm text-gray-900">10 ans</td>
-                                    <td class="px-6 py-4 text-sm font-medium text-gray-900">1,654</td>
-                                    <td class="px-6 py-4 text-sm font-medium text-gray-900">98</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
 
-                <!-- Chart Placeholder -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <div class="bg-white rounded-xl shadow-md border border-gray-100 p-6">
-                        <h2 class="text-lg font-bold text-gray-900 mb-4">Croissance Mensuelle</h2>
-                        <div class="h-64 flex items-end justify-around space-x-2">
-                            <div class="flex flex-col items-center flex-1">
-                                <div class="w-full bg-blue-900 rounded-t-lg transition-all hover:bg-blue-800" style="height: 60%"></div>
-                                <span class="text-xs text-gray-600 mt-2">Jan</span>
-                            </div>
-                            <div class="flex flex-col items-center flex-1">
-                                <div class="w-full bg-blue-900 rounded-t-lg transition-all hover:bg-blue-800" style="height: 75%"></div>
-                                <span class="text-xs text-gray-600 mt-2">Fév</span>
-                            </div>
-                            <div class="flex flex-col items-center flex-1">
-                                <div class="w-full bg-blue-900 rounded-t-lg transition-all hover:bg-blue-800" style="height: 85%"></div>
-                                <span class="text-xs text-gray-600 mt-2">Mar</span>
-                            </div>
-                            <div class="flex flex-col items-center flex-1">
-                                <div class="w-full bg-blue-900 rounded-t-lg transition-all hover:bg-blue-800" style="height: 70%"></div>
-                                <span class="text-xs text-gray-600 mt-2">Avr</span>
-                            </div>
-                            <div class="flex flex-col items-center flex-1">
-                                <div class="w-full bg-blue-900 rounded-t-lg transition-all hover:bg-blue-800" style="height: 90%"></div>
-                                <span class="text-xs text-gray-600 mt-2">Mai</span>
-                            </div>
-                            <div class="flex flex-col items-center flex-1">
-                                <div class="w-full bg-blue-900 rounded-t-lg transition-all hover:bg-blue-800" style="height: 100%"></div>
-                                <span class="text-xs text-gray-600 mt-2">Juin</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white rounded-xl shadow-md border border-gray-100 p-6">
-                        <h2 class="text-lg font-bold text-gray-900 mb-4">Répartition Type</h2>
-                        <div class="h-64 flex items-center justify-center">
-                            <div class="relative w-48 h-48">
-                                <svg viewBox="0 0 100 100" class="transform -rotate-90">
-                                    <circle cx="50" cy="50" r="40" fill="none" stroke="#1e3a8a" stroke-width="20" stroke-dasharray="175 251" class="transition-all"></circle>
-                                    <circle cx="50" cy="50" r="40" fill="none" stroke="#10b981" stroke-width="20" stroke-dasharray="76 251" stroke-dashoffset="-175" class="transition-all"></circle>
-                                </svg>
-                                <div class="absolute inset-0 flex items-center justify-center flex-col">
-                                    <p class="text-3xl font-bold text-gray-900">334</p>
-                                    <p class="text-sm text-gray-600">Total</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-center space-x-6 mt-4">
-                            <div class="flex items-center space-x-2">
-                                <div class="w-4 h-4 bg-blue-900 rounded"></div>
-                                <span class="text-sm text-gray-700">Avocats (73%)</span>
-                            </div>
-                            <div class="flex items-center space-x-2">
-                                <div class="w-4 h-4 bg-green-600 rounded"></div>
-                                <span class="text-sm text-gray-700">Huissiers (27%)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </main>
         </div>
     </div>

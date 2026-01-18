@@ -1,4 +1,4 @@
 <?php
-class Huissier extends Personne {
+class Huissier extends Personne  {
     
 }

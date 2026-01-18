@@ -2,4 +2,5 @@
 
 class Avocat extends Personne {
     
+    
 }
