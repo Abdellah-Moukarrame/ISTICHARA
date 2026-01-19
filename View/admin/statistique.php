@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,7 @@
         }
     </script>
 </head>
+
 <body class="bg-gray-50">
     <div class="flex h-screen overflow-hidden">
         <!-- Sidebar (same as other admin pages) -->
@@ -141,66 +143,73 @@
                         <table class="w-full">
                             <thead class="bg-gray-50">
                                 <tr>
-                                    <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Rang</th>
                                     <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Avocat</th>
                                     <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Ville</th>
                                     <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Expérience</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-gray-200">
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="px-6 py-4">
-                                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-yellow-100 text-yellow-800 font-bold text-sm">1</span>
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                                                <span class="text-sm font-medium text-blue-900">AB</span>
+                                <?php foreach ($top_avocat as $value) { ?>
+                                    <tr class="hover:bg-gray-50 transition-colors">
+                                        
+                                        <td class="px-6 py-4">
+                                            <div class="flex items-center space-x-3">
+                                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                                    <span class="text-sm font-medium text-blue-900">AV</span>
+                                                </div>
+                                                <p class="text-sm font-medium text-gray-900"><?= $value['full_name'] ?></p>
                                             </div>
-                                            <p class="text-sm font-medium text-gray-900">Me. Ahmed Bennani</p>
-                                        </div>
-                                    </td>
-                                    <td class="px-6 py-4 text-sm text-gray-900">Casablanca</td>
-                                    <td class="px-6 py-4 text-sm text-gray-900">15 ans</td>
+                                        </td>
+                                        <td class="px-6 py-4 text-sm text-gray-900"><?= $value['nom_ville'] ?></td>
+                                        <td class="px-6 py-4 text-sm text-gray-900"><?= $value['experience'] ?></td>
+                                    </tr>
+                                <?php } ?>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Top_huissier-->
+
+                <div class="bg-white rounded-xl shadow-md border border-gray-100 p-6 mb-6">
+                    <h2 class="text-lg font-bold text-gray-900 mb-4">Top Huissiers</h2>
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Huissier</th>
+                                    <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Ville</th>
+                                    <th class="px-6 py-3 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Expérience</th>
                                 </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="px-6 py-4">
-                                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-gray-200 text-gray-700 font-bold text-sm">2</span>
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-                                                <span class="text-sm font-medium text-green-900">FE</span>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <?php foreach ($top_huissiers as $row) { ?>
+                                    <tr class="hover:bg-gray-50 transition-colors">
+                                        
+                                        <td class="px-6 py-4">
+                                            <div class="flex items-center space-x-3">
+                                                <div class="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center">
+                                                    <span class="text-sm font-medium text-black-900">HU</span>
+                                                </div>
+                                                <p class="text-sm font-medium text-gray-900"><?= $row['full_name'] ?></p>
                                             </div>
-                                            <p class="text-sm font-medium text-gray-900">Me. Fatima El Amrani</p>
-                                        </div>
-                                    </td>
-                                    <td class="px-6 py-4 text-sm text-gray-900">Rabat</td>
-                                    <td class="px-6 py-4 text-sm text-gray-900">12 ans</td>
-                                </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="px-6 py-4">
-                                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-orange-100 text-orange-700 font-bold text-sm">3</span>
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        <div class="flex items-center space-x-3">
-                                            <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
-                                                <span class="text-sm font-medium text-purple-900">KM</span>
-                                            </div>
-                                            <p class="text-sm font-medium text-gray-900">Me. Karim Mansouri</p>
-                                        </div>
-                                    </td>
-                                    <td class="px-6 py-4 text-sm text-gray-900">Marrakech</td>
-                                    <td class="px-6 py-4 text-sm text-gray-900">10 ans</td>
-                                </tr>
+                                        </td>
+                                        <td class="px-6 py-4 text-sm text-gray-900"><?= $row['nom_ville'] ?></td>
+                                        <td class="px-6 py-4 text-sm text-gray-900"><?= $row['experience'] ?></td>
+                                    </tr>
+                                <?php } ?>
+
+
                             </tbody>
                         </table>
                     </div>
                 </div>
 
-                
+
             </main>
         </div>
     </div>
 </body>
+
 </html>
