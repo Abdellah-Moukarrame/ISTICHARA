@@ -12,7 +12,7 @@ if (isset($_POST['add_personne'])) {
     $add_personne->setemail($_POST['email_personne']);
     $add_personne->setphone($_POST['tele_personne']);
     $add_personne->settarif($_POST['tarif_personne']);
-    $add_personne->setexperience($_POST['tarif_personne']);
+    $add_personne->setexperience($_POST['exp_personne']);
     $add_personne->setId_ville($id_ville); 
 
     if (empty($_POST['type_acte'])) {
